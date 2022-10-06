@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Counter Increment</title>
+    <style>
+      body {
+        font: 19px/25px arial;
+        padding: 10px 0 0 20px;
+        counter-reset: my-counter 0;
+      }
+      h1 {
+        font-size: 29px;
+        margin-bottom: 35px;
+      }
+
+      h2::before {
+        content: "Chapter " counter(my-counter, lower-roman) ":";
+        counter-increment: my-counter 1;
+        color: crimson;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rokaya Akter</h1>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipisici elit.</h2>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisici elit. Lorem ipsum dolor
+      sit amet, consectetur adipisici elit. Lorem ipsum dolor sit amet,
+      consectetur adipisici elit. Lorem ipsum dolor sit amet, consectetur
+      adipisici elit.
+    </p>
+
+    <h2>Lorem ipsum dolor sit amet, consectetur adipisici elit.</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisici elit. Lorem ipsum dolor
+      sit amet, consectetur adipisici elit. Lorem ipsum dolor sit amet,
+      consectetur adipisici elit. Lorem ipsum dolor sit amet, consectetur
+      adipisici elit.
+    </p>
+
+    <h2>Lorem ipsum dolor sit amet, consectetur adipisici elit.</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisici elit. Lorem ipsum dolor
+      sit amet, consectetur adipisici elit. Lorem ipsum dolor sit amet,
+      consectetur adipisici elit. Lorem ipsum dolor sit amet, consectetur
+      adipisici elit.
+    </p>
+  </body>
+</html>

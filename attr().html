@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Attr() function</title>
+    <style>
+      body {
+        font: 19px/25px arial;
+        padding: 10px 0 0 20px;
+      }
+      h1 {
+        font-size: 29px;
+        margin-bottom: 35px;
+      }
+      p::after {
+        content: attr(class);
+        color: red;
+      }
+      h1:hover::after {
+        content: attr(data-caption);
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 data-caption="Name">Rokaya Akter</h1>
+
+    <p class="test">Hello World!</p>
+  </body>
+</html>
