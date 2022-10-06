@@ -1,0 +1,43 @@
+<hrml>
+  <head>
+    <title>Pseudo Elements Selectors</title>
+    <style>
+      body {
+        font: 19px/25px arial;
+        padding: 10px 0 0 20px;
+      }
+      h1 {
+        font-size: 29px;
+        margin-bottom: 35px;
+      }
+      p::before {
+        content: "Hello";
+        background: rgb(165, 165, 199);
+        color: #fff;
+      }
+
+      p::after {
+        content: "World";
+        background: rgba(125, 125, 218, 0.526);
+        color: #fff;
+      }
+      h1:hover::after {
+        content: "Green";
+        background: rgb(236, 154, 154);
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rokaya Akter</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisici elit.Lorem ipsum dolor
+      sit amet, consectetur adipisici elit.Lorem ipsum dolor sit amet,
+      consectetur adipisici elit.Lorem ipsum dolor sit amet, consectetur
+      adipisici elit.Lorem ipsum dolor sit amet, consectetur adipisici
+      elit.Lorem ipsum dolor sit amet, consectetur adipisici elit.Lorem ipsum
+      dolor sit amet, consectetur adipisici elit.Lorem ipsum dolor sit amet,
+      consectetur adipisici elit.
+    </p>
+  </body>
+</hrml>
