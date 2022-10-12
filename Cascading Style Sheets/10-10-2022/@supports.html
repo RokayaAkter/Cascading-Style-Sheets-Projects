@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS @Support</title>
+    <style>
+      /* @supports (filter: blur(2px)) or (-webkit-filter: blur(2px)) {
+        body {
+          background: orange;
+        }
+      } */
+      /* @supports (filter: blur(2px)) and (-webkit-filter: blur(2px)) {
+        body {
+          background: orange;
+        }
+      } */
+      @supports (display: grid) and (not (display: inline-grid)) {
+        body {
+          background: orange;
+        }
+      }
+      :root {
+        --test : green;
+      }
+      @supports (--test : green) {
+        body {
+            background: green;
+        }
+      }
+    </style>
+  </head>
+  <body></body>
+</html>
