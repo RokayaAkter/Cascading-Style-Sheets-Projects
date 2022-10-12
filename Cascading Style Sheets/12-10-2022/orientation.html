@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Orientation</title>
+    <style>
+      #parent {
+        display: flex;
+        border: 1px solid #000;
+      }
+      #parent > div {
+        border: 1px solid #000;
+      }
+      @media (orientation: Landscape) {
+        body {
+          background: pink;
+        }
+        #parent {
+          flex-direction: row;
+        }
+      }
+      @media (orientation: portrait) {
+        body {
+          background: lightblue;
+        }
+        #parent {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div>Box 1</div>
+      <div>Box 2</div>
+      <div>Box 3</div>
+    </div>
+  </body>
+</html>
