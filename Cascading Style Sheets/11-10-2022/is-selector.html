@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>:is Pseudo Class</title>
+    <style>
+      /* #test1 :is(h1, h2, h3) {
+        font-family: Arial, Helvetica, sans-serif;
+        color: red;
+      } */
+      /* :is(#test1, #test2) h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: red;
+      } */
+      :is(#test1, #test2) :is(h1, p) {
+        font-family: Arial, Helvetica, sans-serif;
+        color: red;
+      }
+      :is(#test1, #test2) p:hover {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Heading outside of Div Tag</h1>
+    <div id="test1">
+      <h1>Section One</h1>
+      <h2>Sub Heading</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero debitis,
+        quae earum ratione nisi natus magni fugit rem rerum ab similique
+        voluptatem necessitatibus nam quam laudantium voluptate expedita tempore
+        excepturi voluptates inventore odit aspernatur aliquam. Quas dignissimos
+        error eligendi, dolorem est nulla? Iure porro velit sequi nam nulla
+        ratione, optio aliquid magnam dignissimos deleniti maiores alias odio
+        quia qui doloremque praesentium ex voluptates impedit cupiditate autem
+        assumenda? Minus saepe quos sed reiciendis libero, eius sint aliquam
+        magni amet ut eveniet distinctio necessitatibus a cumque est
+        perspiciatis numquam voluptatibus similique vel laboriosam officia eos
+        veniam. Hic repellendus optio fugit suscipit soluta?
+      </p>
+      <h3>Sub heading 2</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+        praesentium dicta labore eum, placeat harum deserunt molestias ut at,
+        repudiandae reprehenderit cum blanditiis fuga quibusdam et tempora non
+        excepturi? Tenetur excepturi enim assumenda nemo ratione maiores rem
+        consequuntur. Ipsum officia id nesciunt qui corrupti inventore? In
+        explicabo rerum eligendi modi.
+      </p>
+    </div>
+    <hr />
+    <div id="test2">
+      <h1>Section Two</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+        doloremque obcaecati illo. Similique facere minima maiores et amet in
+        voluptatibus tenetur, doloribus molestiae id dolore laboriosam quis,
+        autem delectus aperiam nulla consequatur accusamus corporis fugiat
+        ducimus nemo unde inventore magnam ullam. Doloribus deserunt vitae
+        consequatur quod at laboriosam. Vitae, quas.
+      </p>
+    </div>
+  </body>
+</html>
