@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Display table</title>
+    <style>
+      body {
+        font-family: arial;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      #table {
+        display: table;
+        width: 600px;
+        border: 1px solid black;
+        margin: 0 auto;
+      }
+      .col {
+        display: table-cell;
+        padding: 10px;
+        border: 1px solid #000;
+      }
+      .row {
+        display: table-row;
+      }
+      #row-group {
+        display: table-row-group;
+      }
+      #table-header {
+        display: table-header-group;
+        background: lightblue;
+        text-align: center;
+        font-weight: bold;
+      }
+      #table-footer {
+        display: table-footer-group;
+        background: lightgreen;
+      }
+      #table-colgroup {
+        display: table-column-group;
+      }
+      .table-col {
+        display: table-column;
+      }
+      .col-2 {
+        background: pink;
+        width: 400px;
+        text-align: center;
+      }
+      .col-1 {
+        background: yellowgreen;
+      }
+      .caption {
+        display: table-caption;
+        text-align: center;
+        text-transform: uppercase;
+        color: royalblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Display : Table</h1>
+    <div id="table">
+      <div class="caption">
+        <h3>Course Information</h3>
+      </div>
+      <div id="table-colgroup">
+        <div class="table-col col-1">col 1</div>
+        <div class="table-col col-2">col 2</div>
+        <div class="table-col col-3">col 3</div>
+      </div>
+      <div id="table-header">
+        <div class="col">No.</div>
+        <div class="col">Course Name</div>
+        <div class="col">Price</div>
+      </div>
+      <div id="row-group">
+        <div class="row">
+          <div class="col">1</div>
+          <div class="col">Web design</div>
+          <div class="col">$500</div>
+        </div>
+        <div class="row">
+          <div class="col" style="vertical-align: middle">2</div>
+          <div class="col">
+            Android development Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Harum eligendi possimus sit molestias, corrupti
+            odit cum minima tenetur rerum, optio, beatae quod doloribus ipsam
+            vero voluptatibus temporibus alias officiis hic!
+          </div>
+          <div class="col">$400</div>
+        </div>
+        <div class="row">
+          <div class="col">3</div>
+          <div class="col">UI/UX</div>
+          <div class="col">$350</div>
+        </div>
+      </div>
+      <div id="table-footer">
+        <div class="col"></div>
+        <div class="col">Total Records:</div>
+        <div class="col"></div>
+      </div>
+    </div>
+  </body>
+</html>
