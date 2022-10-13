@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display-Mode</title>
+    <style>
+      body {
+        font-family: arial;
+      }
+      @media (display-mode: fullscreen) {
+        body {
+          background: lightgreen;
+        }
+        h1 {
+          color: green;
+        }
+        p {
+          font-size: 30px;
+        }
+      }
+      @media (display-mode: browser) {
+        h1 {
+          color: blue;
+        }
+      }
+      @media (display-mode: minimal-ui) {
+        h1 {
+          color: orange;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rokaya Akter : CSS Display-Mode</h1>
+  </body>
+</html>
