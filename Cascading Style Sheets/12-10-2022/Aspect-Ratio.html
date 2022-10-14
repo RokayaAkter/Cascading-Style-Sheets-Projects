@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aspect Ratio</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      /* #test {
+        width: 200px;
+        background: orange;
+        border: 2px solid #000;
+        aspect-ratio: 1;
+        overflow: auto;
+      } */
+
+      #parent {
+        width: 400px;
+        border: 2px solid #000;
+      }
+      img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+      }
+
+      @media screen and (max-width: 500px) {
+        #parent {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rokaya Akter : CSS Aspect-Ratio</h1>
+    <!-- <div id="test">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sunt
+      aperiam soluta nesciunt sed nobis molestias unde recusandae minima
+      mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Perspiciatis sunt aperiam soluta nesciunt sed nobis molestias unde
+      recusandae minima mollitia! Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Perspiciatis sunt aperiam soluta nesciunt sed nobis
+      molestias unde recusandae minima mollitia!
+    </div> -->
+    <div id="parent">
+      <img src="ganzia.jpg" alt="flower" />
+    </div>
+  </body>
+</html>
